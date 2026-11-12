@@ -1,10 +1,8 @@
-package src;
-
 public class PrincipalIguals {
     public static void main(String[] args) {
         
-        Fil juan = new Fil("Juan", Thread.MAX_PRIORITY);
-        Fil pepe = new Fil("Pepe", Thread.MAX_PRIORITY);
+        Fil juan = new Fil("Juan", Thread.MAX_PRIORITY, 1000, 0);
+        Fil pepe = new Fil("Pepe", Thread.MAX_PRIORITY, 1000, 0);
 
         juan.start();
         pepe.start();
